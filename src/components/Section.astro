@@ -1,5 +1,5 @@
 ---
-const { color, title, subtitle, top, bottom } = Astro.props;
+const { color, title, subtitle, top, bottom, headerColor } = Astro.props;
 const Textbottom = `bottom-${bottom}`;
 const TextTop = `top-${top}`;
 const textColor = `text-${color}`;
@@ -7,7 +7,7 @@ const textColor = `text-${color}`;
 
 <section
     class="landing-section bg-white h-screen w-screen text-center relative overflow-hidden"
-    data-header-color={color}
+    data-header-color={headerColor}
 >
     <div class="z-30 relative h-full flex flex-col">
         <header class="flex flex-col">
