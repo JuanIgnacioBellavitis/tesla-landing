@@ -4,20 +4,24 @@ import HeroSection from "../components/HeroSection.astro";
 import WeRobotSection from "../components/WeRobotSection.astro";
 import Layout from "../layouts/Layout.astro";
 import Model3Section from "../components/Model3Section.astro";
+import ModelYSection from "../components/ModelYSection.astro";
 ---
 
 <Layout title="Tesla">
 	<LandingHeader />
 
 	<main class="relative w-full h-screen overflow-auto snap-y snap-mandatory">
-		<!-- <div class="snap-center">
+		<div class="snap-center">
 			<HeroSection />
 		</div>
 		<div class="snap-center">
 			<WeRobotSection />
-		</div> -->
+		</div>
 		<div class="snap-center">
 			<Model3Section />
+		</div>
+		<div class="snap-center">
+			<ModelYSection />
 		</div>
 	</main>
 </Layout>
