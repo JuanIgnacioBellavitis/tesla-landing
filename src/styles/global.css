@@ -1,0 +1,23 @@
+/* src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .underline-from-left {
+    position: relative;
+  }
+  .underline-from-left::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+  .underline-from-left:hover::after {
+    width: 100%;
+  }
+}
